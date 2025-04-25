@@ -106,12 +106,12 @@ submitBtn.addEventListener("click", () => {
   input.focus();
 });
 
+restartBtn.addEventListener("click", startGame);
+window.onload = startGame;
+
 input.addEventListener("keydown",
   function(event){
     if(event.key === "Enter"){
       submitBtn.click();
     }
   });
-
-restartBtn.addEventListener("click", startGame);
-window.onload = startGame;
